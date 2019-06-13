@@ -26,3 +26,16 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
 # anguylar-router-dome
+
+# angular 路由学习
+##  第一步 创建模块
+    -- ng g c modelName  创建模块
+##  第二部 配置路由
+    -- 对`const routes: Routes`这个数组中添加路由信息
+    在app-routing.module.ts 配置路由
+    // 当只是单纯的域名访问时转到首页路由
+    {path: '', redirectTo: '/home', pathMatch: 'full'},
+    // 首页路由，这是根路由不要带有斜杠和点
+    // path 是 URL 路径
+    // component 显示的是哪个组件
+    {path: 'home', component: HomeComponent},
