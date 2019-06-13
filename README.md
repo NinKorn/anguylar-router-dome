@@ -28,10 +28,13 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 # anguylar-router-dome
 
 # angular 路由学习
+
+##  第一步 创建项目
+    ng new projectName --routing  创建有路由的项目
 ##  第一步 创建模块
-    -- ng g c modelName  创建模块
+    ng g c modelName  创建模块
 ##  第二部 配置路由
-    -- 对`const routes: Routes`这个数组中添加路由信息
+    对`const routes: Routes`这个数组中添加路由信息
     在app-routing.module.ts 配置路由
     // 当只是单纯的域名访问时转到首页路由
     {path: '', redirectTo: '/home', pathMatch: 'full'},
