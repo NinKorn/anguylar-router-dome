@@ -1,1 +1,16 @@
 <h2>home</h2>
+<div class="admin-box-outli">
+    <div class="check-all">
+        <input name="shopIds" type="checkbox" value="201">
+        <span>全选/取消</span>
+    </div>
+    <ul class="admin-box">
+        <li *ngFor="let item of list" class="admin-box-item">
+            <input name="shopIds" type="checkbox" value="201">
+            <span>{{ item }}</span>
+        </li>
+    </ul>
+    <div class="button">
+        <input type="button" value="提交">
+    </div>
+</div>
